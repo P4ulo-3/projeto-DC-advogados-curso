@@ -6,14 +6,19 @@
     <title>DC Advogados - Contato</title>
     <link rel="stylesheet" href="style2.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body class="p-[0]">
     <!-- header -->
-    <header class="bg-[#1a2b4b]  text-white flex justify-center py-[30px]">
+    <header class="bg-[#1a2b4b]  text-white flex justify-center py-[30px] border-b-[20px] border-[#b68954]">
       <div class="w-[80%] flex flex-row justify-between items-center">
-        <img src="../../assets/logo.png" alt="logomarca" />
-        <nav>
-          <ul class="flex flex-row gap-[30px]">
+        <img class="w-[280px] lg:w-[360px]" src="../../assets/logo.png" alt="logomarca" />
+        <nav class="hidden lg:block" >
+          
+          <ul class=" flex flex-row gap-[30px] ">
             <li>
               <a
                 class="text-[1.4rem] font-bold hover:text-[#b68954] cursor-pointer hover:border-y-[5px] hover:py-[5px] hover:transition-all hover:duration-200"
@@ -24,23 +29,24 @@
             <li>
               <a
                 class="text-[1.4rem] font-bold hover:text-[#b68954] cursor-pointer hover:border-y-[5px] hover:py-[5px] transition-all hover:duration-200"
-                href="../../index.html"
-                href=""
+                href="#"
                 >Contato</a
               >
             </li>
           </ul>
+          
         </nav>
+        <i class=" fa-solid fa-bars text-white cursor-pointer text-[2rem] lg:!hidden "></i>
       </div>
     </header>
 
     <!-- contato -->
 
     <section class="flex justify-center py-[6rem]">
-      <div class=" w-[80%] flex flex-row justify-between flex-wrap gap-[2rem]">
-        <div class=" w-[43.75rem] flex gap-[2rem] flex-col text-[1.4rem]">
-          <h2 class="text-[2.5rem] font-bold border-l-[0.5rem] border-[#b68954] pl-[1rem]">Contato</h2>
-          <p>
+      <div class="  w-[80%] flex flex-row items-center 2xl:items-start justify-center 2xl:justify-between flex-wrap gap-[2rem]">
+        <div class=" w-[43.75rem] flex gap-[2rem] flex-col text-[1.2rem] md:text-[1.4rem] items-center 2xl:items-start xl:text-start ">
+          <h2 class="w-fit text-[2.5rem] font-bold border-0 2xl:border-l-[0.5rem] border-[#b68954] pl-[1rem]  ">Contato</h2>
+          <p class="text-center 2xl:text-start">
             Entre em contato conosco para mais informações ou agendar uma
             consulta. Estamos aqui para ajudar!
           </p>
@@ -60,8 +66,8 @@
           </div>
         </div>
 
-        <div class="bg-[#1a2b4b]  p-[2.5rem]">
-          <form class="flex flex-col gap-[2rem]">
+        <div class="bg-[#1a2b4b] p-[2.5rem]">
+          <form class=" flex flex-col gap-[2rem]">
             <div class="flex flex-col gap-2 ">
               <label class="text-white"  for="nome">Nome: </label>
               <input
